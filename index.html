@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aluminios Marín | Carpintería de Aluminio, Vidrio Templado y Herrería en Caracas</title>
-    <meta name="description" content="Más de 40 años de experiencia en Caracas. Especialistas en ventanas panorámicas, cerramientos de balcón, puertas de baño, espejos y herrería de seguridad. Atendido por sus propios dueños.">
+    <title>Aluminios Marín | Cerramientos, Ventanas Panorámicas, Puertas de Vidrio y Herrería</title>
+    <meta name="description" content="Más de 40 años de experiencia. Especialistas en cerramientos de balcón, ventanas panorámicas, puertas de baño en vidrio templado, espejos y herrería de seguridad. Atendido por sus propios dueños.">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -39,340 +39,323 @@
     </script>
     <style>
         .glass-nav {
-            background: rgba(255, 255, 255, 0.92);
+            background: rgba(255, 255, 255, 0.94);
             backdrop-filter: blur(10px);
         }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-500 selection:text-white">
 
-    <!-- Configuración del número oficial de WhatsApp -->
+    <!-- Variables globales -->
     <script>
         const WHATSAPP_NUMBER = "584221789460";
         const CATALOG_URL = "https://wa.me/c/584221789460";
     </script>
 
-    <!-- Header / Navbar -->
+    <!-- Header / Menú Superior -->
     <header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-slate-200/80 transition-all duration-300">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
-            <!-- Brand Logo -->
             <a href="#" class="flex items-center space-x-3 group">
                 <div class="w-10 h-10 bg-slate-900 text-white rounded-lg flex items-center justify-center font-bold text-xl tracking-wider group-hover:bg-emerald-600 transition-colors">
                     AM
                 </div>
                 <div>
                     <span class="text-lg font-bold text-slate-900 tracking-tight block leading-none">ALUMINIOS MARÍN</span>
-                    <span class="text-xs text-slate-500 tracking-wider uppercase font-medium">Caracas • Desde hace +40 años</span>
+                    <span class="text-xs text-slate-500 tracking-wider uppercase font-medium">Más de 40 años de experiencia</span>
                 </div>
             </a>
 
-            <!-- Desktop Navigation -->
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#quienes-somos" class="hover:text-slate-900 transition-colors">Quiénes Somos</a>
                 <a href="#servicios" class="hover:text-slate-900 transition-colors">Servicios</a>
-                <a href="#experiencia" class="hover:text-slate-900 transition-colors">Nosotros</a>
-                <a href="#galeria" class="hover:text-slate-900 transition-colors">Galería</a>
-                <a href="#cotizador" class="hover:text-slate-900 transition-colors">Cotizador</a>
+                <a href="#catalogo" class="hover:text-slate-900 transition-colors">Catálogo de Fotos</a>
+                <a href="#contacto" class="hover:text-slate-900 transition-colors">Contacto & Cotización</a>
             </nav>
 
-            <!-- Actions -->
             <div class="hidden md:flex items-center space-x-3">
-                <a :href="CATALOG_URL" target="_blank" onclick="window.open(CATALOG_URL, '_blank')" class="inline-flex items-center justify-center px-4 py-2 text-xs font-semibold uppercase tracking-wider text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition-all border border-slate-200">
+                <a href="https://wa.me/c/584221789460" target="_blank" class="inline-flex items-center justify-center px-4 py-2 text-xs font-semibold uppercase tracking-wider text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition-all border border-slate-200">
                     <i class="fa-brands fa-whatsapp text-emerald-600 text-sm mr-2"></i> Ver Catálogo
                 </a>
-                <a href="#cotizador" class="inline-flex items-center justify-center px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-slate-900 hover:bg-emerald-600 rounded-lg transition-all shadow-sm">
-                    Solicitar Presupuesto
+                <a href="#contacto" class="inline-flex items-center justify-center px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-slate-900 hover:bg-emerald-600 rounded-lg transition-all shadow-sm">
+                    Cotizar Proyecto
                 </a>
             </div>
 
-            <!-- Mobile Menu Button -->
             <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-slate-900 focus:outline-none">
                 <i class="fa-solid fa-bars text-xl"></i>
             </button>
         </div>
 
-        <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 bg-white px-4 py-5 space-y-4 shadow-lg">
-            <a href="#servicios" class="block text-slate-700 font-medium py-1">Servicios</a>
-            <a href="#experiencia" class="block text-slate-700 font-medium py-1">Nuestra Historia (+40 Años)</a>
-            <a href="#galeria" class="block text-slate-700 font-medium py-1">Galería de Trabajos</a>
-            <a href="#cotizador" class="block text-slate-700 font-medium py-1">Cotizador en Línea</a>
-            <div class="pt-3 border-t border-slate-100 flex flex-col space-y-2">
-                <a :href="CATALOG_URL" target="_blank" onclick="window.open(CATALOG_URL, '_blank')" class="w-full text-center py-2.5 bg-emerald-50 text-emerald-700 font-semibold text-sm rounded-lg border border-emerald-200 flex items-center justify-center space-x-2">
+            <a href="#quienes-somos" class="block text-slate-700 font-medium py-1">Quiénes Somos (+40 Años)</a>
+            <a href="#servicios" class="block text-slate-700 font-medium py-1">Nuestros Servicios</a>
+            <a href="#catalogo" class="block text-slate-700 font-medium py-1">Catálogo de Fotos Reales</a>
+            <a href="#contacto" class="block text-slate-700 font-medium py-1">Contacto & Cotizador</a>
+            <div class="pt-3 border-t border-slate-100">
+                <a href="https://wa.me/c/584221789460" target="_blank" class="w-full text-center py-2.5 bg-emerald-50 text-emerald-700 font-semibold text-sm rounded-lg border border-emerald-200 flex items-center justify-center space-x-2">
                     <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span>Abrir Catálogo en WhatsApp</span>
+                    <span>Ver Catálogo en WhatsApp</span>
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="pt-28 sm:pt-36 pb-16 sm:pb-24 bg-white border-b border-slate-200/60">
+    <!-- 1. Hero Principal -->
+    <section class="pt-28 sm:pt-36 pb-16 sm:pb-20 bg-white border-b border-slate-200/60">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <div class="max-w-3xl">
-                <!-- Badge -->
                 <div class="inline-flex items-center space-x-2 px-3 py-1 bg-slate-100 border border-slate-200 rounded-full text-xs font-medium text-slate-700 mb-6">
                     <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
                     <span>Empresa Familiar • Atendido por sus Propios Dueños</span>
                 </div>
                 
                 <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-tight mb-6">
-                    Carpintería de aluminio, vidrio y herrería a medida en Caracas.
+                    Cerramientos, Ventanas Panorámicas, Puertas de Vidrio y Herrería a Medida.
                 </h1>
                 
                 <p class="text-lg sm:text-xl text-slate-600 font-normal leading-relaxed mb-8">
-                    Especialistas en ventanas panorámicas, cerramientos de balcón, puertas de baño en vidrio templado, espejos y herrería de seguridad. Fabricación e instalación directa sin intermediarios.
+                    Especialistas en cerramientos de balcón, ventanas corredizas, puertas de baño en vidrio templado, espejos y herrería de seguridad. Fabricación e instalación directa atendida por sus propios dueños.
                 </p>
 
-                <!-- Action Buttons -->
                 <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-3 sm:space-y-0 sm:space-x-4">
-                    <a href="#cotizador" class="inline-flex items-center justify-center px-6 py-3.5 text-sm font-semibold text-white bg-slate-900 hover:bg-emerald-600 rounded-xl transition-all shadow-sm">
-                        <span>Calcular Presupuesto Rápidamente</span>
-                        <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    <a href="#quienes-somos" class="inline-flex items-center justify-center px-6 py-3.5 text-sm font-semibold text-white bg-slate-900 hover:bg-emerald-600 rounded-xl transition-all shadow-sm">
+                        <span>Conoce Nuestra Trayectoria</span>
+                        <i class="fa-solid fa-arrow-down ml-2 text-xs"></i>
                     </a>
-                    <a :href="CATALOG_URL" target="_blank" onclick="window.open(CATALOG_URL, '_blank')" class="inline-flex items-center justify-center px-6 py-3.5 text-sm font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-xl transition-all border border-slate-200">
+                    <a href="https://wa.me/c/584221789460" target="_blank" class="inline-flex items-center justify-center px-6 py-3.5 text-sm font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-xl transition-all border border-slate-200">
                         <i class="fa-brands fa-whatsapp text-emerald-600 text-lg mr-2"></i>
-                        <span>Ver Fotos en WhatsApp</span>
+                        <span>Abrir Catálogo de Fotos</span>
                     </a>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Trust Indicators -->
-                <div class="mt-12 pt-8 border-t border-slate-100 grid grid-cols-2 sm:grid-cols-3 gap-6">
-                    <div>
-                        <div class="text-2xl font-bold text-slate-900">+40 Años</div>
-                        <div class="text-xs text-slate-500 mt-0.5">Trayectoria comprobada</div>
+    <!-- 2. PASO 1: QUIÉNES SOMOS -->
+    <section id="quienes-somos" class="py-16 sm:py-24 bg-slate-900 text-white border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="inline-block px-3 py-1 bg-white/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider rounded-full">
+                        PASO 1 • CONÓCENOS
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-bold tracking-tight">
+                        Una empresa familiar con más de 40 años de experiencia.
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                        En <strong>Aluminios Marín</strong> nos respaldan más de cuatro décadas de trayectoria ininterrumpida. Somos una empresa familiar enfocada en la honestidad, la selección de materiales de primera calidad y acabados impecables en cada instalación.
+                    </p>
+                    <div class="bg-slate-800/80 p-5 rounded-2xl border border-slate-700/60">
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-user-shield text-emerald-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Atendidos por sus propios dueños</h4>
+                                <p class="text-slate-400 text-xs mt-1">
+                                    Sin intermediarios ni personal externo. Los mismos dueños de la empresa te asesoran, realizan la toma de medidas en sitio e inspeccionan la instalación.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <div class="text-2xl font-bold text-slate-900">208+ Ventas</div>
-                        <div class="text-xs text-slate-500 mt-0.5">100% Recomendados en ML</div>
-                    </div>
-                    <div class="col-span-2 sm:col-span-1">
-                        <div class="text-2xl font-bold text-slate-900">Atención Directa</div>
-                        <div class="text-xs text-slate-500 mt-0.5">Asesoría de sus dueños</div>
+                </div>
+
+                <div class="lg:col-span-5 bg-slate-800 p-6 sm:p-8 rounded-3xl border border-slate-700/80 space-y-6">
+                    <h3 class="text-lg font-bold text-white">Nuestra Reputación Comprobada</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4 p-4 bg-slate-900/60 rounded-xl border border-slate-700/50">
+                            <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center text-xl font-bold">
+                                5.0
+                            </div>
+                            <div>
+                                <div class="text-sm font-bold text-white">Google Maps</div>
+                                <div class="text-xs text-slate-400">Calificación perfecta de nuestros clientes</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 p-4 bg-slate-900/60 rounded-xl border border-slate-700/50">
+                            <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center text-xl font-bold">
+                                208+
+                            </div>
+                            <div>
+                                <div class="text-sm font-bold text-white">MercadoLibre</div>
+                                <div class="text-xs text-slate-400">100% de los compradores nos recomiendan</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Grid de Servicios Principal -->
+    <!-- 3. PASO 2: NUESTROS SERVICIOS -->
     <section id="servicios" class="py-16 sm:py-24 bg-slate-50 border-b border-slate-200/60">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
-                <div>
-                    <h2 class="text-xs font-semibold uppercase tracking-widest text-emerald-600 mb-2">Lo Que Fabricamos</h2>
-                    <p class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">Soluciones integrales para hogar y oficina</p>
-                </div>
-                <p class="text-sm text-slate-500 max-w-md mt-3 md:mt-0">
-                    Trabajamos con aluminio de alta gama, cristalería templada de seguridad y herrería forjada a medida.
-                </p>
+            <div class="mb-12">
+                <span class="text-xs font-semibold uppercase tracking-widest text-emerald-600 mb-2 block">PASO 2 • NUESTROS SERVICIOS</span>
+                <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 tracking-tight">Soluciones a Medida para Casas, Aptos y Comercios</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Servicio 1: Ventanas y Balcones -->
+                <!-- Servicio 1 -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 hover:border-slate-300 transition-all shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-slate-900 mb-6">
+                        <i class="fa-solid fa-border-all text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Cerramientos de Balcón Panorámicos</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Cierres de balcón en cristal y marcos de aluminio de piso a techo. Aislamiento, máxima iluminación y vistas panorámicas impecables.
+                    </p>
+                </div>
+
+                <!-- Servicio 2 -->
                 <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 hover:border-slate-300 transition-all shadow-sm">
                     <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-slate-900 mb-6">
                         <i class="fa-solid fa-window-maximize text-xl"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">Ventanas & Balcones Panorámicos</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        Cerramientos panorámicos, sistemas corredizos y puertas plegables. Aislamiento óptico, sellado hermético e integración impecable.
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Ventanas Panorámicas y Corredizas</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Sistemas de ventanas panorámicas y corredizas a medida con marcos de aluminio de alta durabilidad y cierre hermético.
                     </p>
-                    <ul class="text-xs text-slate-500 space-y-1.5 pt-3 border-t border-slate-100">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Perfilería de aluminio mate / anodizado</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Vidrios panorámicos de alta transparencia</li>
-                    </ul>
                 </div>
 
-                <!-- Servicio 2: Vidrios de Baño y Espejos -->
+                <!-- Servicio 3 -->
                 <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 hover:border-slate-300 transition-all shadow-sm">
                     <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-slate-900 mb-6">
                         <i class="fa-solid fa-shower text-xl"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">Puertas de Baño & Espejos</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        Mamparas fijas Walk-in, puertas batientes y plegables en vidrio templado. Espejos flotantes biselados a medida.
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Puertas de Baño y Espejos a Medida</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Puertas plegables, batientes o mamparas fijas en vidrio templado. Espejos panorámicos flotantes biselados a medida.
                     </p>
-                    <ul class="text-xs text-slate-500 space-y-1.5 pt-3 border-t border-slate-100">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Herrajes de acero inoxidable</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Diseños minimalistas sin marcos pesados</li>
-                    </ul>
                 </div>
 
-                <!-- Servicio 3: Herrería de Seguridad -->
-                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 hover:border-slate-300 transition-all shadow-sm">
-                    <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-slate-900 mb-6">
-                        <i class="fa-solid fa-shield-halved text-xl"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">Herrería & Seguridad</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        Rejas de protección integral para balcones y ventanas, portones corredizos, puertas de seguridad y toldos.
-                    </p>
-                    <ul class="text-xs text-slate-500 space-y-1.5 pt-3 border-t border-slate-100">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Estructuras robustas anti-impacto</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Acabados en pintura anticorrosiva</li>
-                    </ul>
-                </div>
-
-                <!-- Servicio 4: Fachadas y Vitrinas -->
-                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 hover:border-slate-300 transition-all shadow-sm">
-                    <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-slate-900 mb-6">
-                        <i class="fa-solid fa-store text-xl"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">Fachadas & Vitrinas Comerciales</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        Diseño e instalación de fachadas comerciales en vidrio templado y aluminio para locales, oficinas y salas de exhibición.
-                    </p>
-                    <ul class="text-xs text-slate-500 space-y-1.5 pt-3 border-t border-slate-100">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Puertas batientes y arañas de fijación</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Vidrios de seguridad laminados</li>
-                    </ul>
-                </div>
-
-                <!-- Servicio 5: Puertas de Vidrio Templado -->
+                <!-- Servicio 4 -->
                 <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 hover:border-slate-300 transition-all shadow-sm">
                     <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-slate-900 mb-6">
                         <i class="fa-solid fa-door-open text-xl"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">Puertas Batientes & Plegables</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        Sistemas de paso elegante para espacios interiores o accesos a terrazas. Vidrio claro, esmerilado o ahumado.
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Puertas Batientes en Vidrio Templado</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Puertas de entrada e interiores en vidrio templado con herrajes de acero inoxidable, tiradores elegantes y frenos de piso.
                     </p>
-                    <ul class="text-xs text-slate-500 space-y-1.5 pt-3 border-t border-slate-100">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Cierres hidráulicos y frenos de piso</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Cerraduras de seguridad integradas</li>
-                    </ul>
                 </div>
 
-                <!-- Servicio 6: Aires Acondicionados -->
+                <!-- Servicio 5 -->
                 <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 hover:border-slate-300 transition-all shadow-sm">
                     <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-slate-900 mb-6">
-                        <i class="fa-solid fa-fan text-xl"></i>
+                        <i class="fa-solid fa-store text-xl"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">Instalación de Aires Acondicionados</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        Montaje técnico, bases metálicas reforzadas y mantenimiento preventivo para equipos residenciales y comerciales.
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Fachadas y Vitrinas Comerciales</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Diseño y montaje de frentes comerciales en vidrio templado y aluminio para locales, exhibidores y salas de ventas.
                     </p>
-                    <ul class="text-xs text-slate-500 space-y-1.5 pt-3 border-t border-slate-100">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Soportes exteriores de alta resistencia</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Servicio técnico garantizado</li>
-                    </ul>
+                </div>
+
+                <!-- Servicio 6 -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 hover:border-slate-300 transition-all shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-slate-900 mb-6">
+                        <i class="fa-solid fa-shield-halved text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Herrería en General & Seguridad</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Rejas de protección integral (estilo pecho de paloma), portones corredizos, puertas de seguridad metálicas y toldos.
+                    </p>
+                </div>
+
+                <!-- Servicio 7 -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 hover:border-slate-300 transition-all shadow-sm md:col-span-2 lg:col-span-3">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between">
+                        <div class="flex items-center space-x-4 mb-4 sm:mb-0">
+                            <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-slate-900 shrink-0">
+                                <i class="fa-solid fa-fan text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-900">Instalación y Mantenimiento de Aires Acondicionados</h3>
+                                <p class="text-sm text-slate-600 mt-1">Montaje técnico especializado, soportes exteriores reforzados de alta resistencia y servicio de mantenimiento.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Historia y Valores Familiar -->
-    <section id="experiencia" class="py-16 sm:py-24 bg-white border-b border-slate-200/60">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6">
-            <div class="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden">
-                <div class="relative z-10 max-w-2xl">
-                    <span class="inline-block px-3 py-1 bg-white/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider rounded-full mb-6">
-                        Tradición & Oficio
-                    </span>
-                    <h2 class="text-2xl sm:text-4xl font-bold tracking-tight mb-6">
-                        Más de 40 años fabricando con precisión en Caracas.
-                    </h2>
-                    <p class="text-slate-300 leading-relaxed mb-6 text-sm sm:text-base">
-                        Aluminios Marín es una empresa familiar fundada sobre el compromiso, los acabados limpios y la honestidad técnica. Nos caracterizamos por atender a cada cliente personalmente, medir en sitio con exactitud y garantizar instalaciones duraderas.
-                    </p>
-                    <p class="text-slate-300 leading-relaxed mb-8 text-sm sm:text-base">
-                        No dependemos de intermediarios ni vendedores externos: tratas directamente con los maestros artesanos responsables de tu proyecto.
-                    </p>
-                    
-                    <a :href="CATALOG_URL" target="_blank" onclick="window.open(CATALOG_URL, '_blank')" class="inline-flex items-center justify-center px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-sm rounded-xl transition-all">
-                        <i class="fa-brands fa-whatsapp text-lg mr-2"></i>
-                        <span>Hablar con sus Dueños por WhatsApp</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Galería / Catálogo Directo -->
-    <section id="galeria" class="py-16 sm:py-24 bg-slate-50 border-b border-slate-200/60">
+    <!-- 4. PASO 3: CATÁLOGO DE FOTOS REALES EN WHATSAPP -->
+    <section id="catalogo" class="py-16 sm:py-24 bg-white border-b border-slate-200/60">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-            <h2 class="text-xs font-semibold uppercase tracking-widest text-emerald-600 mb-2">Galería de Trabajos</h2>
-            <h3 class="text-2xl sm:text-4xl font-bold text-slate-900 tracking-tight mb-4">Explora Nuestro Catálogo Real</h3>
+            <span class="text-xs font-semibold uppercase tracking-widest text-emerald-600 mb-2 block">PASO 3 • PRUEBA VISUAL</span>
+            <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 tracking-tight mb-4">Fotografías de Obras Realizadas</h2>
             <p class="text-slate-600 max-w-2xl mx-auto mb-10 text-sm sm:text-base">
-                Todas las fotos de nuestras obras completadas en talleres y apartamentos de Caracas están organizadas en nuestro catálogo oficial de WhatsApp Business.
+                Mantenemos nuestro portafolio de fotos reales actualizado en el catálogo oficial de WhatsApp Business.
             </p>
 
-            <!-- Banner interactivo hacia el catálogo de WhatsApp -->
-            <div class="bg-white border border-slate-200 rounded-2xl p-8 sm:p-12 max-w-3xl mx-auto shadow-sm">
+            <div class="bg-slate-50 border border-slate-200 rounded-3xl p-8 sm:p-12 max-w-3xl mx-auto">
                 <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-3xl">
                     <i class="fa-brands fa-whatsapp"></i>
                 </div>
-                <h4 class="text-xl font-bold text-slate-900 mb-2">Catálogo Directo de WhatsApp Business</h4>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Catálogo Oficial en WhatsApp Business</h3>
                 <p class="text-sm text-slate-500 mb-8 max-w-md mx-auto">
-                    Consulta modelos de ventanas panorámicas, espejos biselados, puertas de baño y rejas de seguridad con fotos actualizadas.
+                    Haz clic a continuación para ver los álbumes con fotos reales de cerramientos de balcón, ventanas, puertas de baño, espejos y herrería.
                 </p>
-                <a :href="CATALOG_URL" target="_blank" onclick="window.open(CATALOG_URL, '_blank')" class="inline-flex items-center justify-center px-8 py-4 bg-slate-900 hover:bg-emerald-600 text-white font-semibold text-sm rounded-xl transition-all shadow-sm">
-                    <span>Abrir Catálogo de Fotos Oficial</span>
-                    <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
+                <a href="https://wa.me/c/584221789460" target="_blank" class="inline-flex items-center justify-center px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm rounded-xl transition-all shadow-md space-x-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Ver Catálogo en WhatsApp Business</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Cotizador Interactivo Final -->
-    <section id="cotizador" class="py-16 sm:py-24 bg-white border-b border-slate-200/60">
+    <!-- 5. PASO 4: FORMULARIO DE CONTACTO Y COTIZADOR -->
+    <section id="contacto" class="py-16 sm:py-24 bg-slate-50 border-b border-slate-200/60">
         <div class="max-w-4xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-12">
-                <h2 class="text-xs font-semibold uppercase tracking-widest text-emerald-600 mb-2">Cotización Inmediata</h2>
-                <h3 class="text-2xl sm:text-4xl font-bold text-slate-900 tracking-tight mb-3">Calcula Tu Presupuesto a Medida</h3>
+                <span class="text-xs font-semibold uppercase tracking-widest text-emerald-600 mb-2 block">PASO 4 • SOLICITA TU PRESUPUESTO</span>
+                <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 tracking-tight mb-3">Formulario de Contacto y Cotización</h2>
                 <p class="text-slate-600 text-sm sm:text-base">
-                    Selecciona el trabajo que necesitas y te enviaremos la estimación directa por WhatsApp.
+                    Completa las características de tu proyecto y recibe una estimación directa por parte de sus dueños.
                 </p>
             </div>
 
-            <!-- Formulario del Cotizador -->
-            <form id="quoteForm" onsubmit="handleQuoteSubmit(event)" class="bg-slate-50 p-6 sm:p-10 rounded-3xl border border-slate-200 space-y-6">
-                <!-- Selector de Servicio -->
+            <form id="quoteForm" onsubmit="handleQuoteSubmit(event)" class="bg-white p-6 sm:p-10 rounded-3xl border border-slate-200/90 shadow-sm space-y-6">
                 <div>
-                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Tipo de Trabajo</label>
-                    <select id="quoteService" required class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-slate-800 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-sm">
-                        <option value="Ventana Panorámica">Ventana Panorámica / Corrediza</option>
-                        <option value="Cerramiento de Balcón">Cerramiento de Balcón Panorámico</option>
-                        <option value="Puerta de Baño / Espejo">Puerta de Baño o Espejo Flotante</option>
-                        <option value="Herrería y Rejas de Seguridad">Herrería y Rejas de Seguridad</option>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Servicio Requerido</label>
+                    <select id="quoteService" required class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-800 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-sm">
+                        <option value="Cerramiento de Balcón Panorámico">Cerramiento de Balcón Panorámico</option>
+                        <option value="Ventana Panorámica / Corrediza">Ventanas Panorámicas y Corredizas</option>
+                        <option value="Puerta de Baño / Espejo">Puerta de Baño o Espejo a Medida</option>
+                        <option value="Puerta Batiente en Vidrio Templado">Puerta Batiente en Vidrio Templado</option>
                         <option value="Fachada / Vitrina Comercial">Fachada o Vitrina Comercial</option>
-                        <option value="Puerta Batiente / Plegable">Puerta Batiente / Plegable en Vidrio</option>
-                        <option value="Instalación de Aire Acondicionado">Instalación de Aire Acondicionado</option>
+                        <option value="Herrería y Seguridad">Herrería en General (Rejas, Portones, Toldos)</option>
+                        <option value="Aire Acondicionado">Instalación / Mantenimiento de Aire Acondicionado</option>
                     </select>
                 </div>
 
-                <!-- Dimensiones Aproximadas -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Ancho Aprox. (Metros o CM)</label>
-                        <input type="text" id="quoteWidth" placeholder="Ej: 2.10 metros" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-slate-800 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-sm">
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Ancho Aprox. (Metros / CM)</label>
+                        <input type="text" id="quoteWidth" placeholder="Ej: 2.10 m" class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-800 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-sm">
                     </div>
                     <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Alto Aprox. (Metros o CM)</label>
-                        <input type="text" id="quoteHeight" placeholder="Ej: 1.50 metros" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-slate-800 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-sm">
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Alto Aprox. (Metros / CM)</label>
+                        <input type="text" id="quoteHeight" placeholder="Ej: 1.50 m" class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-800 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-sm">
                     </div>
                 </div>
 
-                <!-- Ubicación en Caracas -->
                 <div>
-                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Ubicación / Zona en Caracas</label>
-                    <input type="text" id="quoteZone" placeholder="Ej: Las Mercedes, El Cafetal, La Yaguara, San Bernardino..." required class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-slate-800 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-sm">
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Ubicación / Zona</label>
+                    <input type="text" id="quoteZone" placeholder="Ej: Las Mercedes, Chacao, El Cafetal, La Yaguara..." required class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-800 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-sm">
                 </div>
 
-                <!-- Detalle Adicional -->
                 <div>
-                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Detalles del Proyecto (Opcional)</label>
-                    <textarea id="quoteDetails" rows="3" placeholder="Ej: Deseo vidrio templado esmerilado / Marcos en aluminio negro mate / Requiere desmonte previo..." class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-slate-800 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-sm"></textarea>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-2">Detalles Adicionales (Opcional)</label>
+                    <textarea id="quoteDetails" rows="3" placeholder="Ej: Color del marco en aluminio negro, vidrio esmerilado, requiere desmonte previo..." class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-800 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-sm"></textarea>
                 </div>
 
-                <!-- Botón de Envío -->
-                <button type="submit" class="w-full py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm tracking-wider uppercase rounded-xl transition-all shadow-md flex items-center justify-center space-x-2">
-                    <i class="fa-brands fa-whatsapp text-xl"></i>
-                    <span>Enviar Solicitud a WhatsApp</span>
+                <button type="submit" class="w-full py-4 bg-slate-900 hover:bg-emerald-600 text-white font-bold text-sm tracking-wider uppercase rounded-xl transition-all shadow-md flex items-center justify-center space-x-2">
+                    <i class="fa-brands fa-whatsapp text-xl text-emerald-400"></i>
+                    <span>Enviar Cotización a WhatsApp</span>
                 </button>
 
                 <p class="text-xs text-slate-400 text-center">
-                    Al presionar el botón se abrirá una conversación en WhatsApp con los datos completados para atenderte al instante.
+                    Se abrirá automáticamente el chat de WhatsApp con los datos formateados para atenderte de inmediato.
                 </p>
             </form>
         </div>
@@ -385,39 +368,36 @@
                 <div>
                     <span class="text-lg font-bold text-white block mb-2">ALUMINIOS MARÍN</span>
                     <p class="text-xs text-slate-400 leading-relaxed">
-                        Fábrica de carpintería metálica, estructuras de aluminio, cristal templado y herrería integral en Caracas, Venezuela.
+                        Cerramientos, ventanas panorámicas, puertas de vidrio y herrería a medida. Más de 40 años de trayectoria atendidos por sus propios dueños.
                     </p>
                 </div>
                 <div>
-                    <span class="text-xs font-semibold uppercase tracking-wider text-white block mb-3">Contacto Directo</span>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-white block mb-3">Atención Directa</span>
                     <ul class="text-xs space-y-2">
                         <li><i class="fa-solid fa-phone text-emerald-500 mr-2"></i> +58 422-1789460</li>
-                        <li><i class="fa-solid fa-location-dot text-emerald-500 mr-2"></i> Caracas, Venezuela</li>
-                        <li><i class="fa-solid fa-shield-halved text-emerald-500 mr-2"></i> Atención por sus propios dueños</li>
+                        <li><i class="fa-solid fa-user-check text-emerald-500 mr-2"></i> Atendido por sus propios dueños</li>
                     </ul>
                 </div>
                 <div>
-                    <span class="text-xs font-semibold uppercase tracking-wider text-white block mb-3">Catálogo</span>
-                    <a :href="CATALOG_URL" target="_blank" onclick="window.open(CATALOG_URL, '_blank')" class="inline-flex items-center text-xs text-emerald-400 hover:underline">
-                        <i class="fa-brands fa-whatsapp mr-1"></i> Abrir Catálogo en WhatsApp Business
+                    <span class="text-xs font-semibold uppercase tracking-wider text-white block mb-3">Portafolio</span>
+                    <a href="https://wa.me/c/584221789460" target="_blank" class="inline-flex items-center text-xs text-emerald-400 hover:underline">
+                        <i class="fa-brands fa-whatsapp mr-1"></i> Ver Catálogo en WhatsApp Business
                     </a>
                 </div>
             </div>
-            <div class="flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 space-y-2 sm:space-y-0">
-                <div>&copy; Aluminios Marín. Todos los derechos reservados.</div>
-                <div>Más de 40 años de trayectoria impecable.</div>
+            <div class="text-center md:text-left text-xs text-slate-500">
+                &copy; Aluminios Marín. Todos los derechos reservados.
             </div>
         </div>
     </footer>
 
-    <!-- Botón Flotante de WhatsApp -->
-    <a :href="CATALOG_URL" target="_blank" onclick="window.open(CATALOG_URL, '_blank')" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110 focus:outline-none">
+    <!-- Botón Flotante -->
+    <a href="https://wa.me/c/584221789460" target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110">
         <i class="fa-brands fa-whatsapp text-3xl"></i>
     </a>
 
     <!-- Scripts JavaScript -->
     <script>
-        // Toggle Menú Móvil
         const menuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
 
@@ -425,7 +405,6 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Enviar formulario a WhatsApp
         function handleQuoteSubmit(e) {
             e.preventDefault();
 
@@ -435,13 +414,13 @@
             const zone = document.getElementById('quoteZone').value;
             const details = document.getElementById('quoteDetails').value || "Sin detalles adicionales";
 
-            const message = `Hola Aluminios Marín, deseo solicitar una cotización con los siguientes datos:%0A%0A` +
-                `*Trabajo:* ${service}%0A` +
-                `*Ancho aproximado:* ${width}%0A` +
-                `*Alto aproximado:* ${height}%0A` +
-                `*Ubicación/Zona:* ${zone}%0A` +
+            const message = `Hola Aluminios Marín, me interesa cotizar un trabajo con los siguientes detalles:%0A%0A` +
+                `*Servicio:* ${service}%0A` +
+                `*Ancho aprox.:* ${width}%0A` +
+                `*Alto aprox.:* ${height}%0A` +
+                `*Ubicación / Zona:* ${zone}%0A` +
                 `*Detalles:* ${details}%0A%0A` +
-                `Quedo atento a su respuesta. ¡Muchas gracias!`;
+                `Quedo a la espera de su respuesta. ¡Gracias!`;
 
             const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
             window.open(whatsappUrl, '_blank');
